@@ -28,7 +28,7 @@ public class Server implements Hello {
             
             registry.bind("Hello", stub);
 
-            System.err.println("Server ready");
+            System.err.println("Server Ready. \nHostname: " + host);
         } catch (Exception e) {
             System.err.println("Server exception: " + e.toString());
             e.printStackTrace();
