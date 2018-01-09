@@ -7,7 +7,12 @@ public class Client {
     private Client() {}
 
     public static void main(String[] args) {
-        String host = (args.length < 1) ? null : args[0];
+    	if(args.length < 1) {
+    		System.err.println("invalid argument");
+    		return;
+    	} else {
+    		String host = args[0];
+    	}
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             Hello stub = (Hello) registry.lookup("Hello");

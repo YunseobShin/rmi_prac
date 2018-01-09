@@ -9,7 +9,7 @@ public class Server implements Hello {
 
     public String sayHello(String sender) {
     	String req = sender == null ? "unknwon" : sender;
-    	System.err.println(req + "  is requesting...");
+    	System.err.println(req + " is requesting...");
         	return "Hello " + req + "!";
     }
     
