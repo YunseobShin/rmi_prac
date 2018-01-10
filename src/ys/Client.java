@@ -36,8 +36,19 @@ public class Client {
     	} else {
     		String host = args[0];
         	String sender = (args.length < 2) ? null : args[1];
-        	lookupHello("Hello", host, sender);
-        	lookupAdd("Cal", host, 35, 42, sender);
+        	String name = (args.length < 3) ? null : args[2];
+        	switch (name) {
+			case "Hello":
+				lookupHello(name, host, sender);
+				break;
+			case "Cal":
+				lookupAdd(name, host, Integer.parseInt(args[3]), Integer.parseInt(args[4]), sender);
+				break;
+			default:
+				System.err.println("invalid function name");
+			}
+        	
+        	
     	}
     }
 }
