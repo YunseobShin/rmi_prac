@@ -23,6 +23,10 @@ public class Client {
             Registry registry = LocateRegistry.getRegistry(host);
             Calculate stub = (Calculate) registry.lookup(name);
             int response = stub.add(a, b, sender);
+            for(int i = 0; i < 43242445; i++) {
+            	for(int j = 0; j < 23423423; j++) {
+            	}
+            }
             System.out.println("response: " + response);
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
