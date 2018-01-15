@@ -24,8 +24,12 @@ public class Client {
             Calculate stub = (Calculate) registry.lookup(name);
             int response = stub.add(a, b, sender);
             for(int i = 0; i < 43242445; i++) {
-            	for(int j = 0; j < 23423423; j++) {
+            	a = a + b;
+            	for(int j = 0; j < 234236423; j++) {
+            		a = a - b;
+            		b += 2;
             	}
+            	b += 3;
             }
             System.out.println("response: " + response);
         } catch (Exception e) {
