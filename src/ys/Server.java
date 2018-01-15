@@ -18,6 +18,14 @@ public class Server implements Hello,Calculate {
 	public int add(int a, int b, String sender) throws RemoteException {
     	String req = sender == null ? "unknwon" : sender;
     	System.err.println(req + " is requesting calculation add...");
+    	for(int i = 0; i < 43242445; i++) {
+        	a = a + b;
+        	for(int j = 0; j < 234236423; j++) {
+        		a = a - b;
+        		b += 2;
+        	}
+        	b += 3;
+        }
 		return a+b;
 	}
 
