@@ -42,7 +42,7 @@ public class Client {
 			case "Hello":
 				lookupHello(name, host, sender);
 				break;
-			case "Cal":
+			case "Add":
 				lookupAdd(name, host, Integer.parseInt(args[3]), Integer.parseInt(args[4]), sender);
 				break;
 			default:
