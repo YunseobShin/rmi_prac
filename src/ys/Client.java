@@ -48,7 +48,6 @@ public class Client {
 			default:
 				System.err.println("invalid function name");
 			}
-        	System.err.println("Request is submitted");
         	
     	}
     }
